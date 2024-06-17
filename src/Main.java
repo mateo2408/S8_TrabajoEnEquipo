@@ -2,14 +2,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Bienvenido al banco");
-        System.out.println("Seleccione una opcion:");
-        System.out.println("1. Cuenta corriente");
-        System.out.println("2. Cuenta de ahorros");
-        System.out.println("3. CDT");
-        System.out.println("4. Salir");
-        Scanner sc = new Scanner(System.in);
-        int opcion = sc.nextInt();
+        int opcion;
+        do{
+            System.out.println("Bienvenido al banco");
+            System.out.println("Seleccione una opcion:");
+            System.out.println("1. Cuenta corriente");
+            System.out.println("2. Cuenta de ahorros");
+            System.out.println("3. CDT");
+            System.out.println("4. Salir");
+            Scanner sc = new Scanner(System.in);
+            opcion = sc.nextInt();
         switch (opcion) {
             case 1:
                 CuentaCorriente cc = new CuentaCorriente();
@@ -95,5 +97,6 @@ public class Main {
                 System.out.println("Gracias por usar nuestros servicios");
                 break;
         }
+        }while (opcion != 4);
     }
 }
