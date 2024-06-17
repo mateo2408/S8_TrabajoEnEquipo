@@ -18,7 +18,7 @@ public class CDT {
     }
 
     public void cerrarinversion (){
-        System.out.println("La inversion a sido cerra el dinero se ingresara a la cuenta de ahorros");
-        System.out.println("Monto a ingresar a la cuenta de ahorros: " + MontoCDT);
+        System.out.println("La inversion a sido cerra el dinero se ingresara a la cuenta corriente");
+        System.out.println("Monto a ingresar a la cuenta corriente: " + MontoCDT);
     }
 }

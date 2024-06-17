@@ -28,6 +28,5 @@ public class CuentaAhorros {
 
     public void interes(){
         MontoAhorros = MontoAhorros + (MontoAhorros * 0.06f);
-        System.out.println("El monto de la cuenta de ahorros con el interes es: " + MontoAhorros);
     }
 }
