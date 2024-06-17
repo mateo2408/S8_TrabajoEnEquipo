@@ -9,7 +9,8 @@ public class Main {
             System.out.println("1. Cuenta corriente");
             System.out.println("2. Cuenta de ahorros");
             System.out.println("3. CDT");
-            System.out.println("4. Salir");
+            System.out.println("4. Monstos totales");
+            System.out.println("5. Salir");
             Scanner sc = new Scanner(System.in);
             opcion = sc.nextInt();
         switch (opcion) {
@@ -93,10 +94,16 @@ public class Main {
                         break;
                 }
                 break;
-            case 4:
+                case 4:
+                    System.out.println("El monto total de las cuentas es:");
+                    MontosTotales mt = new MontosTotales();
+                    mt.montoTotal();
+                    break;
+
+            case 5:
                 System.out.println("Gracias por usar nuestros servicios");
                 break;
         }
-        }while (opcion != 4);
+        }while (opcion != 5);
     }
 }
